@@ -1,9 +1,7 @@
 package com.spingjourney.Week2Homework.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,11 +17,13 @@ import java.util.Date;
 @NoArgsConstructor
 public class DepartmentEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int deptId;
 
     private String title;
 
-    private boolean isActive;
+    @JsonProperty("isActive")
+    private Boolean isActive;
 
     private Date createdAt;
 
