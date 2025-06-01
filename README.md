@@ -67,6 +67,15 @@ This project is an introduction to Spring Boot Web MVC and RESTful API developme
 - Implementing custom validation annotations in Spring Boot
 - **Custom Annotations Implemented:** @ValidPassword and @ValidPrimeNo for enhanced validation
 
+  
+**1.@ValidPassword**
+  ![4 errorresponse](https://github.com/user-attachments/assets/b7f6561c-da8d-4300-8e11-72e0a0aab806)
+
+**2.@ValidPrimeNumbers**
+  ![image](https://github.com/user-attachments/assets/6502bda5-04e1-4a54-a077-b2ed003efe55)
+
+
+
 ### 7. Exception Handling in Spring Boot Web MVC
 - Handling exceptions with @ExceptionHandler
 - Using @ControllerAdvice for global exception handling
@@ -77,10 +86,14 @@ This project is an introduction to Spring Boot Web MVC and RESTful API developme
 - Implementing response wrappers
 - Using DTOs to structure API responses
 
-### 9. Extra : Java 8 Lambda and Stream API
-- Introduction to Java 8 functional programming
-- Using Lambdas and Streams in Java
-- Applying Java 8 features in Spring Boot
+**Example of Api Response With properDate**
+  ![image](https://github.com/user-attachments/assets/64e09831-2de7-468c-a91a-97106d24fca4)
+
+
+ ### 9. Screenshot of H2 database console**
+
+   ![h2-DBretrival](https://github.com/user-attachments/assets/1e9c284c-193c-4033-af13-f94bcc0b6571)
+    
 
 ## How to Run the Project
 1. Clone the repository:
@@ -103,11 +116,7 @@ This project is an introduction to Spring Boot Web MVC and RESTful API developme
    - JDBC URL: `jdbc:h2:mem:testdb`
    - Username: `sa`
    - Password: (leave blank)
-   **Screenshot of H2 database console**
-
-    ![h2-DBretrival](https://github.com/user-attachments/assets/1e9c284c-193c-4033-af13-f94bcc0b6571)
-
-
+  
 5. Test the API endpoints using Postman or cURL:
    ```bash
    curl -X GET http://localhost:8080/api/example
