@@ -18,10 +18,10 @@ public class EmployeeController {
     // get request using @PathVariable annotation
     //Use path variables when the
 //    //parameter is an essential part of the URL path that identifies a resource.
-//    @GetMapping(path="/employees/{empId}")
-//    public EmployeeDTO getInfoById(@PathVariable int empId){
-//        return new EmployeeDTO(empId,"rohan","rohan@gmail.com",20,45000,true);
-//    }
+    @GetMapping(path="/employees/{empId}")
+    public EmployeeDTO getInfoById(@PathVariable int empId){
+        return new EmployeeDTO(empId,"rohan","rohan@gmail.com","physics",45000,true);
+    }
 
 
     // get Request using @RequestParam Annotation == "?var=value&..."
@@ -33,16 +33,15 @@ public class EmployeeController {
 
     //Request Using @RequestBody annotation
 //    // generally used for request like post ,put, delete
-//    @PostMapping(path="/employees")
-//    public EmployeeDTO addData(@RequestBody EmployeeDTO eDto){
-//        eDto.setId(1001);
-//        eDto.setAge(20);
-//        eDto.setEmail("employee@123gmail.com");
-//        eDto.setSalary(90876);
-//        eDto.setActive(true);
-//        return eDto;
-//    }
-//
+    @PostMapping(path="/employees")
+    public EmployeeDTO addData(@RequestBody EmployeeDTO eDto){
+        eDto.setEmpId(1001);
+        eDto.setEmpNm("Rohan");
+        eDto.setSalary(90876);
+        eDto.setActive(true);
+        return eDto;
+    }
+
 
     @Autowired
     private EmployeeServices empServ;

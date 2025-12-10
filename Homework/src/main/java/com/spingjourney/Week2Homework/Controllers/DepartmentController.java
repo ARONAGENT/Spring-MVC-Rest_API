@@ -1,10 +1,8 @@
 package com.spingjourney.Week2Homework.Controllers;
 
 import com.spingjourney.Week2Homework.DTO.DepartmentDTO;
-import com.spingjourney.Week2Homework.DTO.EmployeeDTO;
 import com.spingjourney.Week2Homework.Services.DepartmentServices;
 import jakarta.validation.Valid;
-import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
